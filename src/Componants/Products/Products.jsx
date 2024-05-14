@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { Cartext } from '../Context/CartContext';
 import toast from 'react-hot-toast';
 import CartIcon from '../CartOfProduct/CartIcon';
+import { PiHeartFill } from 'react-icons/pi';
 export default function Products() 
 {
     const {addProductToCart} = useContext(Cartext)
@@ -126,6 +127,9 @@ export default function Products()
                              <div className='badge absolute top-4 border border-black rounded-md px-3 flex opacity-10 hover:opacity-100'>
                                             <span className='font-semibold text-lg cursor-default'>{product.ratingsAverage} </span><span className='mt-1 ps-1'><Star size={23} strokeWidth={1.5} /></span>
                                </div>         
+                             <div className='badge absolute top-4 right-4 p-1 rounded-full'>
+                                            <span className='text-xl'><PiHeartFill /></span>
+                               </div>           
                             </div> 
                             <div className='button pt-2 flex justify-center px-10 pb-3'> 
                               <button onClick={()=>AddToCart(product.id)}

@@ -103,9 +103,9 @@ export default function ProductDetails()
   <div className=' mx-auto py-16'>
       <div className='grid lg:grid-cols-12 px-10'>
         <div className='lg:col-span-4 md:col-span-6 xs:col-span-12 md:ps-24 xs:ps-5 '>
-            <figure className='border border-black border-dashed rounded-full shadow-2xl w-full'>
+            <figure className='border border-black border-dashed rounded-full shadow-2xl w-full relative'>
                 <img className='w-full' src={data?.data?.data?.imageCover} alt="productPic" loading='lazy'/>
-            </figure>
+            </figure> 
         </div>
         <div className='lg:col-span-8 px-10 md:col-span-12 xs:col-span-12 flex justify-center items-center'>
             <div className='details'>

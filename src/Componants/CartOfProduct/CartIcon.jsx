@@ -13,7 +13,7 @@ export default function CartIcon()
     <div  className='flex justify-center'>
             <Badge color='error' overlap="circular" badgeContent={numOfCartItems}>
                 <h2 onClick={()=>nav('/cart')} className='text-3xl p-5 text-white
-                 bg-black rounded-full hover:-rotate-45 transition-all
+                 bg-black rounded-full hover:rotate-45 transition-all
                   cursor-pointer hover:text-5xl
                   hover:text-black hover:bg-transparent'>
                         <CiShoppingBasket/>
